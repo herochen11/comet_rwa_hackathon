@@ -192,6 +192,10 @@ export const networkConfigs: NetworkConfig[] = [
     chainId: 59144,
     url: `https://rpc.ankr.com/linea/${ANKR_KEY}`,
   },
+  {   network: 'zircuit-testnet',
+      url: 'https://zircuit-testnet.drpc.org',
+      chainId: 48898, // Zircuit testnet chain ID,
+    },
 ];
 
 function getDefaultProviderURL(network: string) {
@@ -709,6 +713,9 @@ const config: HardhatUserConfig = {
 
   paths: {
     tests: './test',
+    sources: "./contracts",
+    cache: "./cache",
+    artifacts: "./artifacts"
   },
 
   contractSizer: {
