@@ -1,0 +1,46 @@
+{
+  "name": "USDt-RWAv1",
+  "symbol": "USD Token",
+  "baseToken": "USDt",
+  "baseTokenAddress": "0x89e8a0f004CC32750b49D0dAbA5a88E88FA090E4",
+  "baseTokenPriceFeed": "0xA2F78ab2355fe2f984D808B5CeE7FD0A93D5270E",
+  "pauseGuardian": "0x3036BE19443A894dE4502D8A33a3b03ae3d61bCc",
+  "borrowMin": "1e0",
+  "storeFrontPriceFactor": 0.5,
+  "targetReserves": "5000000e6",
+  "rates": {
+    "supplyKink": 0.85,
+    "supplySlopeLow": 0.048,
+    "supplySlopeHigh": 1.6,
+    "supplyBase": 0,
+    "borrowKink": 0.85,
+    "borrowSlopeLow": 0.053,
+    "borrowSlopeHigh": 1.7,
+    "borrowBase": 0.015
+  },
+  "tracking": {
+    "indexScale": "1e15",
+    "baseSupplySpeed": "0.000011574074074074073e15",
+    "baseBorrowSpeed": "0.0011458333333333333e15",
+    "baseMinForRewards": "100e2"
+  },
+  "rewardToken": "COMP",
+  "assets": {
+    "COMP": {
+      "priceFeed": "0x619db7F74C0061E2917D1D57f834D9D24C5529dA",
+      "decimals": "18",
+      "borrowCF": 0.65,
+      "liquidateCF": 0.7,
+      "liquidationFactor": 0.92,
+      "supplyCap": "500000e18"
+    },
+    "TSTOCK": {
+      "priceFeed": "0x4b531A318B0e44B549F3b2f824721b3D0d51930A",
+      "decimals": "0",
+      "borrowCF": 0.8,
+      "liquidateCF": 0.85,
+      "liquidationFactor": 0.93,
+      "supplyCap": "35000e0"
+    }
+  }
+}
